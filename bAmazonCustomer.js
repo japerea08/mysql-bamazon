@@ -64,7 +64,7 @@ function promptUser(connection){
 					name: "amount"
 				}]).then(function(info){
 					var amount = 0;
-					if(parseInt(info.amount) < 1)
+					if(info.amount < 1)
 						amount = 1;
 					else
 						amount = parseInt(info.amount);
